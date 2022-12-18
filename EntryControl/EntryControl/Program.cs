@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using EntryControl;
+// Filling up Event Database
+var simulate = new SimulateMovement();
+simulate.Simulate();
