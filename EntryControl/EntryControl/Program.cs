@@ -7,7 +7,7 @@ simulate.Simulate();
 var reportWorkHours = new GenerateWorkTimeReport();
 reportWorkHours.Generate();
 
-//Make report of all event on all gates, sorting by worker name and time, savin data to ReportEvents table
+//Make report of all event on all gates, sorting by worker name and time, saving data to ReportEvents table
 var reportEvents= new GenerateEventsReport();
 reportEvents.Generate();
 

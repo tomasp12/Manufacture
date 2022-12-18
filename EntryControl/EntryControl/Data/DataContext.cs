@@ -9,12 +9,12 @@ namespace EntryControl.Data
         public DbSet<Gate> Gates { get; set; }
         public DbSet<Worker> Workers { get; set; }
         public DbSet<Event> Events { get; set; }
-        public DbSet<ReportEvent> ReportEvents { get; set; }
-        public DbSet<ReportWorkHours> ReportWorkHours { get; set; }
+        public DbSet<EntryEventReportLine> ReportEvents { get; set; }
+        public DbSet<WorkTimeReportLine> ReportWorkHours { get; set; }
         public DbSet<GateAccess> GateAccess { get; set; }        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Database=EntryControlDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False,MultipleActiveResultSets=true");
+            optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Database=EntryControlDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;MultipleActiveResultSets=true");
             
         
         }
