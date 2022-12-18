@@ -1,6 +1,6 @@
 ﻿namespace EntryControl.Models
 {
-    public class ReportEvent
+    public class EntryEventReportLine
     {
         public int Id { get; set; }
         public DateTime EvenTime{ get; set; }

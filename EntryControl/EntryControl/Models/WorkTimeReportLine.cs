@@ -1,6 +1,6 @@
 ﻿namespace EntryControl.Models
 {
-    public class ReportWorkHours
+    public class WorkTimeReportLine
     {
         public int Id { get; set; }
         public int Year { get; set; }

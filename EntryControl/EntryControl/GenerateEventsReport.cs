@@ -47,7 +47,7 @@ namespace EntryControl
                                                                      && (c.Time <= _timeTo) 
                                                                      && (c.WorkerId == worker.Id)))
                 {
-                    context.ReportEvents.Add(new ReportEvent
+                    context.ReportEvents.Add(new EntryEventReportLine
                     {
                         EvenTime = eventRow.Time,
                         Action = eventRow.Action.ToString(),

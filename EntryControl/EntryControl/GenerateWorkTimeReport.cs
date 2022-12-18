@@ -4,13 +4,13 @@ using EntryControl.Models;
 
 namespace EntryControl
 {
-    public class GenerateReportWorkHours
+    public class GenerateWorkTimeReport
     {
         private DateTime _timeFrom = DateTime.MinValue;
         private DateTime _timeTo = DateTime.MinValue;
-        public GenerateReportWorkHours() { }
+        public GenerateWorkTimeReport() { }
 
-        public GenerateReportWorkHours(DateTime from, DateTime to)
+        public GenerateWorkTimeReport(DateTime from, DateTime to)
         {
             _timeFrom = from;
             _timeTo = to;
@@ -73,7 +73,7 @@ namespace EntryControl
                             }
                         }
 
-                        ReportWorkHours report = new();
+                        WorkTimeReportLine report = new();
                         if (context.ReportWorkHours.Any(c => (c.Year == day.Year)
                                                              && (c.WorkerId == worker.Id)
                                                              && (c.Month == day.Month)))
